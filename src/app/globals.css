@@ -104,7 +104,8 @@ p {
 }
 
 button {
-  background-color: #2563eb;
+  background: linear-gradient(-45deg, #833045, #1e1b4b, #1e1e2e, #1e293b);
+  animation: gradientBG 10s ease infinite;
   color: #fff;
   border: none;
   padding: 10px 16px;
@@ -115,12 +116,15 @@ button {
 }
 
 button:hover {
-  background-color: #1d4ed8;
+  background: linear-gradient(-45deg, #833045, #1e1b4b, #1e1e2e, #833045);
 }
 
 /* Form */
 .nft-form {
-  background-color: #1e293b;
+  background: linear-gradient(-45deg, #833045, #1e1b4b, #1e1e2e, #833045);
+  animation: gradientBG 10s ease infinite;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 1.5rem;
   border-radius: 10px;
   margin-top: 2rem;
@@ -146,7 +150,7 @@ input[type='file'] {
   padding: 0.6rem;
   border-radius: 6px;
   border: 1px solid #334155;
-  background-color: #0f172a;
+  background : linear-gradient(-45deg, #0f172a, #1e1b4b, #1e1e2e, #1e293b);
   color: #f8fafc;
 }
 
