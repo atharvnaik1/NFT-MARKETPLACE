@@ -1,4 +1,5 @@
-This is a Next.js project bootstrapped with create-next-app.
+![NFT Preview](./public/nft.png)
+
 
 Getting Started
 First, run the development server:
