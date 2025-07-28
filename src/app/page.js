@@ -175,7 +175,7 @@ export default function Home() {
 
   return (
     <div className="App">
-      <h1>ERC1155 NFT Marketplace</h1>
+      <h1 className="text-transparent bg-clip-text bg-gradient-to-r [#a5173a] via-[#aeaae9] to-[#a5173a]">ERC1155 NFT Marketplace</h1>
 
       {!walletAddress ? (
         <div>
@@ -200,10 +200,12 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <p><strong>Connected Wallet:</strong> {walletAddress}</p>
+         <p className="font-mono">
+  <strong>Connected Wallet:</strong> {walletAddress}
+        </p>
           <button onClick={disconnectWallet}>Disconnect</button>
 
-          <h2>Marketplace Listings</h2>
+          <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-[#a5173a] via-[#aeaae9] to-[#a5173a]">Marketplace Listings</h2>
           {loadingListings ? (
             <p>Loading...</p>
           ) : listings.length === 0 ? (
