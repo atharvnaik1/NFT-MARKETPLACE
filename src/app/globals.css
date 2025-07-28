@@ -116,7 +116,7 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(-45deg, #833045, #1e1b4b, #1e1e2e, #833045);
+  background: linear-gradient(-45deg, #833045, #181539, #0e0e13, #833045);
 }
 
 /* Form */
