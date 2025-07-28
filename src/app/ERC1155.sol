@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol";
 
-// 0x09c8d21e22F1B0F35D92cf5C0868ADDEfdac1cfa sepolia ka address hai 
+
 contract SimpleNFTMarketplace is ERC1155, Ownable, ERC1155Holder {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
