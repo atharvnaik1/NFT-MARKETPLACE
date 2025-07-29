@@ -40,12 +40,17 @@
   box-sizing: border-box;
 }
 
-html, body {
+html, body, #__next {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -62,9 +67,28 @@ body {
   animation: gradientBG 15s ease infinite;
 }
 
-.App {
-  max-width: 900px;
-  margin: 0 auto;
+.wallet-address {
+  margin-left: 16px;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  margin-left: 32px;
+  margin-top: 25px;
+}
+
+.connect {
+  margin-bottom: 15px;
+}
+
+.disconnect {
+  margin-bottom: 15px;
+}
+
+.main-content {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
   padding: 2rem;
 }
 
@@ -88,6 +112,14 @@ h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
+}
+
+.nft-gradient {
+  background: linear-gradient(135deg, #833045 0%, #1e1b4b 100%);
+}
+
+.white-bg {
+  background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 100%);
 }
 
 h2 {

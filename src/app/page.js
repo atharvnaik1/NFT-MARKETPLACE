@@ -4,10 +4,13 @@ import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import axios from 'axios';
 import CONTRACTABI from './contractABI.json';
+import Banner from '../../components/banner';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 export default function Home() {
   const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS;
-  const [inputWalletAddress, setInputWalletAddress] = useState("0xf2d229a62faedca31ba033b1a2bfdbc43998f425");
+  const [inputWalletAddress, setInputWalletAddress] = useState("0xf2d22....998f425");
   const [walletAddress, setWalletAddress] = useState(null);
   const [contract, setContract] = useState(null);
   const [nftName, setNftName] = useState('');
@@ -174,8 +177,22 @@ export default function Home() {
   };
 
   return (
-    <div className="App">
-      <h1 className="text-transparent bg-clip-text bg-gradient-to-r [#a5173a] via-[#aeaae9] to-[#a5173a]">ERC1155 NFT Marketplace</h1>
+    <div className="App min-h-screen flex flex-col">
+      <Navbar 
+        walletAddress={walletAddress}
+        connectWallet={connectWallet}
+        disconnectWallet={disconnectWallet}
+      />
+      
+      <main className="main-content">
+        <div className="">
+          {/* <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#a5173a] via-[#aeaae9] to-[#a5173a] text-center text-4xl font-bold mb-8">ERC1155 NFT Marketplace</h1> */}
+      
+      <Banner
+          name={(<>Discover, collect, and sell <br />extraordinary NFTs</>)}
+          childStyles=""
+          parentStyles="justify-center mb-7 h-72 sm:h-60 p-12 xs:p-4 xs:h-44 rounded-3xl"
+        />
 
       {!walletAddress ? (
         <div>
@@ -185,7 +202,7 @@ export default function Home() {
               submitManualAddress();
             }}
           >
-            <label>Enter Wallet Address:</label>
+            <label className="wallet-address">Enter Wallet Address:</label>
             <input
               type="text"
               value={inputWalletAddress}
@@ -257,6 +274,10 @@ export default function Home() {
           </form>
         </>
       )}
+        </div>
+      </main>
+      
+      <Footer />
     </div>
   );
 }
