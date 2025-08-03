@@ -108,6 +108,13 @@ body {
   padding: 0 1.5rem;
 }
 
+
+.banner-name {
+  margin-left: 44px;
+  text-align: center;
+  color: #bb9b9b;
+}
+
 h1 {
   text-align: center;
   font-size: 2.5rem;
@@ -214,8 +221,10 @@ textarea {
 }
 
 .nft-card img {
-  width: 150px;
-  height: auto;
+  width: 100%;
+  max-width: 256px;
+  height: 256px;
+  object-fit: cover;
   border-radius: 8px;
   object-fit: fill;
   margin-bottom: 0.5rem;

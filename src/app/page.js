@@ -189,7 +189,11 @@ export default function Home() {
           {/* <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#a5173a] via-[#aeaae9] to-[#a5173a] text-center text-4xl font-bold mb-8">ERC1155 NFT Marketplace</h1> */}
       
       <Banner
-          name={(<>Discover, collect, and sell <br />extraordinary NFTs</>)}
+          name={
+            <span className="banner-name">
+              Discover, collect, and sell creative NFTs
+            </span>
+          }
           childStyles=""
           parentStyles="justify-center mb-7 h-72 sm:h-60 p-12 xs:p-4 xs:h-44 rounded-3xl"
         />

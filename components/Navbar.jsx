@@ -8,7 +8,7 @@ const Navbar = ({ walletAddress, connectWallet, disconnectWallet }) => {
           {/* Logo/Brand */}
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className=" logo text-transparent bg-clip-text bg-gradient-to-r [#a5173a] via-[#aeaae9] to-[#a5173a] text-center text-4xl font-bold mb-8">
+              <h1 className=" logo text-transparent bg-clip-text bg-gradient-to-r from-[#aeaae9] via-[#a5173a] to-[#aeaae9] text-center text-4xl font-bold mb-8">
                ERC1155 NFT Marketplace
               </h1>
             </div>
